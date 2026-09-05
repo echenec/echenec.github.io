@@ -1,9 +1,9 @@
 ---
 layout: page
 permalink: /contact/
-title: Contact
+title: contact
 nav: true
-nav_order: 6
+nav_order: 7
 ---
 
 <div class="post">
