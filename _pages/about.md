@@ -9,7 +9,7 @@ profile:
   image: prof_pic.jpeg
   image_circular: false # crops the image to make it circular
   more_info: >
-    
+
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
@@ -24,6 +24,6 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hello! 
+Hello!
 
 I am a PhD Candidate and Paul F. Lazarsfeld Fellow in the Department of Sociology at Columbia University. Broadly, my research interests lie at the intersection of international migration, ethnic and racial boundaries, and political participation.
