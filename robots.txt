@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://echenec.github.io/al-folio/sitemap.xml
+Sitemap: https://echenec.github.io/sitemap.xml
