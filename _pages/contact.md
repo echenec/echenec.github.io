@@ -7,17 +7,26 @@ nav_order: 4
 ---
 
 <div class="post">
-  <h2>Address</h2>
+
+<p><a href="mailto:eva.chen@columbia.edu">eva.chen [at] columbia [dot] edu</a></p>
+
   <p>
-    Department of Sociology<br>
-    Columbia University<br>
-    606 W 122nd St<br>
+    Knox Hall<br>
+    606 West 122nd St<br>
     New York, NY 10027
   </p>
 
-  <h2>Email</h2>
-  <p><a href="mailto:eva.chen@columbia.edu">eva.chen@columbia.edu</a></p>
-
-  <h2>LinkedIn</h2>
-  <p><a href="https://www.linkedin.com/in/evachen6/" target="_blank" rel="noopener">linkedin.com/in/evachen6</a></p>
+ 
+<div class="social">
+  <div class="contact-icons">
+    <a href="mailto:eva.chen@columbia.edu" title="Email">
+      <i class="fas fa-envelope fa-2x"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/evachen6/" target="_blank" rel="noopener" title="LinkedIn">
+      <i class="fab fa-linkedin fa-2x"></i>
+    </a>
+    <a href="https://sociology.columbia.edu/content/eva-chen" target="_blank" rel="noopener" title="University Profile">
+      <i class="fas fa-university-2x"></i>
+    </a>
+  </div>
 </div>
