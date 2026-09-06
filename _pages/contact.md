@@ -6,8 +6,7 @@ nav: true
 nav_order: 4
 ---
 
-<div class="post", style="text-align: center;">
-
+<div class="post" style="text-align: center;">
 <p><a href="mailto:eva.chen@columbia.edu">eva.chen [at] columbia [dot] edu</a></p>
 
   <p>
