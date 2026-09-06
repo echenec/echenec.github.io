@@ -22,4 +22,26 @@ latest_posts:
 
 Hello!
 
-I am a PhD Candidate and Paul F. Lazarsfeld Fellow in the Department of Sociology at Columbia University. Broadly, my research interests lie at the intersection of international migration, ethnic and racial boundaries, and political participation.
+I am a PhD Candidate and Paul F. Lazarsfeld Fellow in the Department of Sociology at Columbia University. My research interests lie at the intersection of international migration, ethnic and racial boundaries, and political participation.
+
+Currently, I am studying how migrants and new arrivals in the United States adapt in their host country, with a particular focus on the tension between _temporariness_ and _permanence_ in migrant status. My current projects investigate how migrants on temporary status navigate daily life amidst future uncertainty, how the native-born population draws boundaries around legal status and citizenship, and how temporary legal status informs labor market outcomes. I draw on qualitative, quantitative, and experimental methods to explore these questions.
+
+Prior to graduate studies, I received a BA in political science from the University of Minnesota. Outside of research, I enjoy live music, badminton, and Pokémon Go.
+
+
+<div class="post" style="text-align: center;">
+<h2>Email</h2>
+  <p><a href="mailto:eva.chen@columbia.edu">eva.chen@columbia.edu</a></p>
+
+  <h2>LinkedIn</h2>
+  <p><a href="https://www.linkedin.com/in/evachen6/" target="_blank" rel="noopener">linkedin.com/in/evachen6</a></p>
+
+  <div class="contact-icons" style="display:flex; justify-content:center; gap:16px; margin-top:20px;">
+    <a href="mailto:eva.chen@columbia.edu" title="Email">
+      <i class="fas fa-envelope"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/evachen6/" target="_blank" rel="noopener" title="LinkedIn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://sociology.columbia.edu/content/eva-chen" target="_blank" rel="noopener" title="University Profile">
+      <i class="fas fa-university"></i>
