@@ -14,7 +14,7 @@ nav_order: 2
 *Under construction*
 </p>
 
-{% bibliography --query @*[keywords=migration] %}
+{% bibliography --query @* %}
 
 </details>
 
