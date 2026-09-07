@@ -7,7 +7,7 @@ nav: true
 nav_order: 2
 ---
 
-<details open>
+<details>
 <summary><strong>Temporary Migration</strong></summary>
 
 <p>
@@ -15,6 +15,8 @@ nav_order: 2
 </p>
 
 {% bibliography --query @*[keywords ~= "migration"] %}
+
+<p>
 
 </details>
 
@@ -26,16 +28,24 @@ nav_order: 2
 *Under construction*
 </p>
 
+{% bibliography --query @*[keywords ~= "race-ethnicity"] %}
+
+<p>
+    
 </details>
 
 
 <details>
 <summary><strong>Asian America</strong></summary>
-
+  
 <p>
 *Under construction*
 </p>
 
-{% bibliography --query @*[keywords ~= "race-ethnicity" && keywords ~= "experiments"] %}
+{% bibliography --query @*[keywords ~= "asian-america"] %}
+
+<p style="margin-top: 1em;">
+Related writing: Lee, Jennifer and Eva Chen. 2025. "Review Essay: Race by Law for Asian Americans." <em>American Journal of Sociology</em> 131(2):460–71. <a href="https://doi.org/10.1086/736726" target="_blank" rel="noopener">doi:10.1086/736726</a>.
+</p>
 
 </details>
