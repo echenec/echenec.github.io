@@ -10,3 +10,4 @@ _data/socials.yml
 _config.yml
 assets/bibliography/*.csl
 _bibliography/*.bib
+_pages/**
