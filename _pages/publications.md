@@ -7,14 +7,35 @@ nav: true
 nav_order: 2
 ---
 
-<!-- _pages/publications.md -->
+<details open>
+<summary><strong>Temporary Migration</strong></summary>
 
-<!-- Bibsearch Feature -->
+<p>
+*Under construction*
+</p>
 
-<!-- {% include bib_search.liquid %} -->
+{% bibliography --query @*[keywords ~= "migration"] %}
 
-<div class="publications">
+</details>
 
-{% bibliography %}
 
-</div>
+<details>
+<summary><strong>Racial Categorization</strong></summary>
+
+<p>
+*Under construction*
+</p>
+
+</details>
+
+
+<details>
+<summary><strong>Asian America</strong></summary>
+
+<p>
+*Under construction*
+</p>
+
+{% bibliography --query @*[keywords ~= "race-ethnicity" && keywords ~= "experiments"] %}
+
+</details>
