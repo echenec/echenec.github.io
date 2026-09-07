@@ -16,7 +16,6 @@ nav_order: 2
 
 {% bibliography --query @*[keywords ~= "migration"] %}
 
-<p>
 
 </details>
 
@@ -30,7 +29,6 @@ nav_order: 2
 
 {% bibliography --query @*[keywords ~= "race-ethnicity"] %}
 
-<p>
     
 </details>
 
