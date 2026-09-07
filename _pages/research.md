@@ -14,7 +14,7 @@ nav_order: 2
 *Under construction*
 </p>
 
-{% bibliography --query @* %}
+{% bibliography --query @*[keywords ~= migration] %}
 
 </details>
 
@@ -26,7 +26,8 @@ nav_order: 2
 *Under construction*
 </p>
 
-{% bibliography --query @*[topic=race-ethnicity] %}    
+{% bibliography --query @*[keywords ~= race-ethnicity] %}
+
 </details>
 
 
@@ -37,7 +38,7 @@ nav_order: 2
 *Under construction*
 </p>
 
-{% bibliography --query @*[topic=asian-america] %}
+{% bibliography --query @*[keywords ~= asian-america] %}
 
 <p style="margin-top: 1em;">
 <b><i>Related writing</i></b>: Lee, Jennifer and Eva Chen. 2025. "Review Essay: Race by Law for Asian Americans." <em>American Journal of Sociology</em> 131(2):460–71. <a href="https://doi.org/10.1086/736726" target="_blank" rel="noopener">doi:10.1086/736726</a>.
