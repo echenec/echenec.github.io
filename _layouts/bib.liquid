@@ -1,29 +1,38 @@
 <div class="pub-entry">
-  {% if entry.status %}<div class="pub-subcategory">{{ entry.status }}</div>{% endif %}
 
-  <span class="pub-year">{{ entry.year }}.</span>
-  &ldquo;{{ entry.title }}.&rdquo;
-  {% if entry.journal %}<span class="pub-journal">{{ entry.journal }}</span>.{% endif %}
-  {% if entry.note and entry.journal == nil %}<em>{{ entry.note }}</em>.{% endif %}
+  {% if entry.status %}
+    <div class="pub-subcategory">{{ entry.status }}</div>
+  {% endif %}
 
-  <br>
-  {% for author in entry.author %}
-    {% if author.last == "Chen" and author.first contains "Eva" %}
-      <span class="pub-author-me">{{ author.first }} {{ author.last }}</span>
-    {% else %}
-      {{ author.first }} {{ author.last }}
-    {% endif %}
-    {% unless forloop.last %}
-      {% if forloop.rindex == 2 %} and {% else %}, {% endif %}
-    {% endunless %}
-  {% endfor %}
+  <div class="pub-citation">
+    {{ reference }}
+  </div>
+
+  {% if entry.note %}
+    <div class="pub-note">{{ entry.note }}</div>
+  {% endif %}
 
   {% if entry.doi or entry.pdf or entry.preregistration or entry.data %}
     <div class="pub-links">
-      {% if entry.doi %}<a href="https://doi.org/{{ entry.doi }}" target="_blank" rel="noopener">DOI</a>{% endif %}
-      {% if entry.pdf %} &middot; <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" target="_blank">PDF</a>{% endif %}
-      {% if entry.preregistration %} &middot; <a href="{{ entry.preregistration }}" target="_blank" rel="noopener">Preregistration</a>{% endif %}
-      {% if entry.data %} &middot; <a href="{{ entry.data }}" target="_blank" rel="noopener">Data/Code</a>{% endif %}
+      {% if entry.doi %}
+        <a href="https://doi.org/{{ entry.doi }}" target="_blank" rel="noopener">DOI</a>
+      {% endif %}
+
+      {% if entry.pdf %}
+        {% if entry.doi %} &middot; {% endif %}
+        <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" target="_blank">PDF</a>
+      {% endif %}
+
+      {% if entry.preregistration %}
+        {% if entry.doi or entry.pdf %} &middot; {% endif %}
+        <a href="{{ entry.preregistration }}" target="_blank" rel="noopener">Preregistration</a>
+      {% endif %}
+
+      {% if entry.data %}
+        {% if entry.doi or entry.pdf or entry.preregistration %} &middot; {% endif %}
+        <a href="{{ entry.data }}" target="_blank" rel="noopener">Data/Code</a>
+      {% endif %}
     </div>
   {% endif %}
+
 </div>
