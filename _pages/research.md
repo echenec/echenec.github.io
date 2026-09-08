@@ -61,6 +61,17 @@ nav_order: 2
   text-decoration: underline;
 }
 
+/* Remove bibliography numbering */
+.bibliography {
+  list-style: none;
+  padding-left: 0;
+}
+
+.bibliography li {
+  list-style: none;
+  margin-bottom: 0;
+}
+</style>
 
   
 
@@ -77,7 +88,7 @@ nav_order: 2
 
 
 <details open>
-<summary><strong>Race & Ethnicity</strong></summary>
+<summary><strong>Race &amp; Ethnicity</strong></summary>
 
 <p>
 *Under construction*
