@@ -67,12 +67,12 @@ Under construction...
 
 <div class="research-subcategory">Under Review</div>
 
-{% bibliography --style research --query @*[keywords ~= migration] %}
+{% bibliography --style ec-style --query @*[keywords ~= migration] %}
 
 
 <div class="research-subcategory">Work in Progress</div>
 
-{% bibliography --style research --query @*[keywords ~= migration && note = "Work in progress"] %}
+{% bibliography --style ec-style --query @*[keywords ~= migration && note = "Work in progress"] %}
 
 
 
@@ -85,7 +85,7 @@ Under construction...
 
 <div class="research-subcategory">Work in Progress</div>
 
-{% bibliography --style research --query @*[keywords ~= race-ethnicity && note = "Work in progress"] %}
+{% bibliography --style ec-style --query @*[keywords ~= race-ethnicity && note = "Work in progress"] %}
 
 
 
@@ -98,4 +98,4 @@ Under construction...
 
 <div class="research-subcategory">Reviews</div>
 
-{% bibliography --style research --query @*[keywords ~= asian-america && note = "Reviews"] %}
+{% bibliography --style ec-style --query @*[keywords ~= asian-america && note = "Reviews"] %}
