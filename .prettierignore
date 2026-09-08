@@ -11,3 +11,4 @@ _config.yml
 assets/bibliography/*.csl
 _bibliography/*.bib
 _pages/**
+_layouts/**
