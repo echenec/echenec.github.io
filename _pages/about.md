@@ -25,15 +25,3 @@ Hello! I am a PhD Candidate and Paul F. Lazarsfeld Fellow in the Department of S
 Currently, I am studying how migrants and new arrivals in the United States adapt in their host country, with a particular focus on the tension between _temporariness_ and _permanence_ in migrant status. My current projects investigate how migrants holding temporary legal status navigate daily life amidst future uncertainty, how the native-born population draws boundaries around legal status and citizenship, and how temporary legal status informs labor market outcomes. I draw on qualitative, quantitative, and experimental methods to explore these questions.
 
 Prior to graduate studies, I received a BA in political science from the University of Minnesota. Outside of research, I enjoy live music, badminton, and Pokémon Go.
-
-
-<div class="post" style="text-align: center;">
-  <div class="contact-icons" style="display:flex; justify-content:center; gap:16px; margin-top:20px;">
-    <a href="mailto:eva.chen@columbia.edu" title="Email">
-      <i class="fas fa-envelope"></i>
-    </a>
-    <a href="https://www.linkedin.com/in/evachen6/" target="_blank" rel="noopener" title="LinkedIn">
-      <i class="fab fa-linkedin"></i>
-    </a>
-    <a href="https://sociology.columbia.edu/content/eva-chen" target="_blank" rel="noopener" title="University Profile">
-      <i class="fas fa-university"></i>
