@@ -1,0 +1,18 @@
+<p style="margin-bottom: 1.5em;">
+  {% if entry.status %}<em>{{ entry.status }}</em><br>{% endif %}
+
+  {{ entry.author }}.
+  {% if entry.type == "article" %}
+    {{ entry.year }}. &ldquo;{{ entry.title }}.&rdquo;
+    <em>{{ entry.journal }}</em>
+    {{ entry.volume }}{% if entry.number %}({{ entry.number }}){% endif %}:{{ entry.pages }}.
+    {% if entry.doi %}<a href="https://doi.org/{{ entry.doi }}" target="_blank" rel="noopener">doi:{{ entry.doi }}</a>.{% endif %}
+  {% else %}
+    &ldquo;{{ entry.title }}.&rdquo;
+    {% if entry.status and entry.note %}
+      {{ entry.status }} at <em>{{ entry.note }}</em>.
+    {% elsif entry.note %}
+      {{ entry.note }}.
+    {% endif %}
+  {% endif %}
+</p>
