@@ -8,7 +8,7 @@ nav_order: 2
 ---
 
 <details open>
-<summary><strong>Temporary Migration</strong></summary>
+<summary><strong>Migration</strong></summary>
 
 <p>
 *Under construction*
@@ -20,7 +20,7 @@ nav_order: 2
 
 
 <details open>
-<summary><strong>Racial Categorization</strong></summary>
+<summary><strong>Race & Ethnicity</strong></summary>
 
 <p>
 *Under construction*
