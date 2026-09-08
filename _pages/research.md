@@ -7,7 +7,7 @@ nav: true
 nav_order: 2
 ---
 
-<details>
+<details open>
 <summary><strong>Temporary Migration</strong></summary>
 
 <p>
@@ -19,7 +19,7 @@ nav_order: 2
 </details>
 
 
-<details>
+<details open>
 <summary><strong>Racial Categorization</strong></summary>
 
 <p>
@@ -31,7 +31,7 @@ nav_order: 2
 </details>
 
 
-<details>
+<details open>
 <summary><strong>Asian America</strong></summary>
   
 <p>
