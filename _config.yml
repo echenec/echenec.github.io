@@ -354,7 +354,7 @@ scholar:
   last_name: Chen
   first_name: Eva
 
-  style: assets/bibliography/research.csl
+  style: assets/bibliography/ec-style.csl
   locale: en
 
   source: /_bibliography/
