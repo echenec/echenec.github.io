@@ -8,68 +8,94 @@ nav_order: 2
 ---
 
 <style>
+/* Research category */
 .research-category {
   font-size: 1.4em;
   font-weight: 700;
   border-bottom: 1px solid currentColor;
   padding-bottom: 0.3em;
-  margin-bottom: 0.5em;
+  margin-top: 2em;
+  margin-bottom: 0.75em;
 }
 
+/* Short description */
 .research-description {
+  margin-bottom: 1.5em;
+}
+
+/* Subcategory */
+.research-subcategory {
+  font-size: 0.9em;
   font-weight: 400;
-  margin-bottom: 1em;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-top: 1.5em;
+  margin-bottom: 0.75em;
 }
 
-.pub-entry {
-  margin-bottom: 2em;
+/* Individual publication */
+.research-publication {
+  margin-bottom: 1.5em;
 }
 
-.pub-subcategory {
-  font-weight: 600;
-  margin-bottom: 0.3em;
-}
-
-.pub-links {
+/* Smaller links */
+.research-links {
   font-size: 0.8em;
-  margin-top: 0.35em;
 }
 
-.pub-links a {
+.research-links a {
   color: var(--global-theme-color, #2262c6);
-  text-decoration: underline;
+}
+
+/* Remove bibliography numbering */
+.bibliography {
+  list-style: none;
+  padding-left: 0;
+}
+
+.bibliography li {
+  list-style: none;
 }
 </style>
 
-<details open>
-<summary><strong>Migration</strong></summary>
 
-<p class="research-description">
-*Under construction*
-</p>
+<div class="research-category">Migration</div>
 
-{% bibliography --query @*[keywords ~= migration] %}
+<div class="research-description">
+Under construction...
+</div>
 
-</details>
+<div class="research-subcategory">Under Review</div>
 
-<details open>
-<summary><strong>Race &amp; Ethnicity</strong></summary>
+{% bibliography --query @*[keywords ~= migration AND status = "Under review"] %}
 
-<p class="research-description">
-*Under construction*
-</p>
 
-{% bibliography --query @*[keywords ~= race-ethnicity] %}
+<div class="research-subcategory">Work in Progress</div>
 
-</details>
+{% bibliography --query @*[keywords ~= migration AND status = "Work in progress"] %}
 
-<details open>
-<summary><strong>Asian America</strong></summary>
 
-<p class="research-description">
-*Under construction*
-</p>
 
-{% bibliography --query @*[keywords ~= asian-america] %}
+<div class="research-category">Race &amp; Ethnicity</div>
 
-</details>
+<div class="research-description">
+Under construction...
+</div>
+
+
+<div class="research-subcategory">Work in Progress</div>
+
+{% bibliography --query @*[keywords ~= race-ethnicity AND status = "Work in progress"] %}
+
+
+
+<div class="research-category">Asian America</div>
+
+<div class="research-description">
+Under construction...
+</div>
+
+
+<div class="research-subcategory">Reviews</div>
+
+{% bibliography --query @*[keywords ~= asian-america AND status = "Reviews"] %}
