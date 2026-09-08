@@ -1,8 +1,16 @@
 # this file contains the social media links and usernames of the author
 # the socials will be displayed in the order they are defined here
 # for more information, please refer to the documentation of jekyll-socials plugin: https://github.com/george-gca/jekyll-socials
-# cv_pdf: # path to your CV PDF file
-# email: your email address
+cv_pdf: https://docs.google.com/document/d/1gmE36n1Mjn1pQmg8gzlHEV84nLX1Ttf98BM9hlAO5-Y/view
+email: eva.chen@columbia.edu
+linkedin:
+  logo: <i class="fab fa-linkedin"></i>
+  title: LinkedIn
+  url: https://www.linkedin.com/in/evachen6/
+uni: 
+  logo: <i class="fas fa-university"></i>
+  title: Department page
+  url: https://sociology.columbia.edu/content/eva-chen
 
 
 # inspirehep_id: 1010907 # Inspire HEP author ID
