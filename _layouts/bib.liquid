@@ -1,18 +1,29 @@
-<p style="margin-bottom: 1.5em;">
-  {% if entry.status %}<em>{{ entry.status }}</em><br>{% endif %}
+<div class="pub-entry">
+  {% if entry.status %}<div class="pub-subcategory">{{ entry.status }}</div>{% endif %}
 
-  {{ entry.author }}.
-  {% if entry.type == "article" %}
-    {{ entry.year }}. &ldquo;{{ entry.title }}.&rdquo;
-    <em>{{ entry.journal }}</em>
-    {{ entry.volume }}{% if entry.number %}({{ entry.number }}){% endif %}:{{ entry.pages }}.
-    {% if entry.doi %}<a href="https://doi.org/{{ entry.doi }}" target="_blank" rel="noopener">doi:{{ entry.doi }}</a>.{% endif %}
-  {% else %}
-    &ldquo;{{ entry.title }}.&rdquo;
-    {% if entry.status and entry.note %}
-      {{ entry.status }} at <em>{{ entry.note }}</em>.
-    {% elsif entry.note %}
-      {{ entry.note }}.
+  <span class="pub-year">{{ entry.year }}.</span>
+  &ldquo;{{ entry.title }}.&rdquo;
+  {% if entry.journal %}<span class="pub-journal">{{ entry.journal }}</span>.{% endif %}
+  {% if entry.note and entry.journal == nil %}<em>{{ entry.note }}</em>.{% endif %}
+
+  <br>
+  {% for author in entry.author %}
+    {% if author.last == "Chen" and author.first contains "Eva" %}
+      <span class="pub-author-me">{{ author.first }} {{ author.last }}</span>
+    {% else %}
+      {{ author.first }} {{ author.last }}
     {% endif %}
+    {% unless forloop.last %}
+      {% if forloop.rindex == 2 %} and {% else %}, {% endif %}
+    {% endunless %}
+  {% endfor %}
+
+  {% if entry.doi or entry.pdf or entry.preregistration or entry.data %}
+    <div class="pub-links">
+      {% if entry.doi %}<a href="https://doi.org/{{ entry.doi }}" target="_blank" rel="noopener">DOI</a>{% endif %}
+      {% if entry.pdf %} &middot; <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" target="_blank">PDF</a>{% endif %}
+      {% if entry.preregistration %} &middot; <a href="{{ entry.preregistration }}" target="_blank" rel="noopener">Preregistration</a>{% endif %}
+      {% if entry.data %} &middot; <a href="{{ entry.data }}" target="_blank" rel="noopener">Data/Code</a>{% endif %}
+    </div>
   {% endif %}
-</p>
+</div>
