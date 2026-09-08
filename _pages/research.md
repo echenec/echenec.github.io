@@ -67,7 +67,7 @@ Under construction...
 
 <div class="research-subcategory">Under Review</div>
 
-{% bibliography --style research --query @*[keywords ~= migration && note = "Under review"] %}
+{% bibliography --style research --query @*[keywords ~= migration] %}
 
 
 <div class="research-subcategory">Work in Progress</div>
