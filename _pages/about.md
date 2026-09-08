@@ -37,4 +37,3 @@ Prior to graduate studies, I received a BA in political science from the Univers
       <i class="fas fa-university"></i>
     </a>
   </div>
-</div>
