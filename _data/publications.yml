@@ -20,7 +20,7 @@
 - category: race-ethnicity
   status: "Work in Progress"
   title: "Minority Rule: Perceptions of Disadvantage in Higher Education"
-  note: "Authors contributed equally"
+  equal_authorship: true
   authors:
     - {first: Katerine S., last: Pérez}
     - {first: Eva, last: Chen}
