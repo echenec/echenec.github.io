@@ -12,3 +12,4 @@ assets/bibliography/*.csl
 _bibliography/*.bib
 _pages/**
 _layouts/**
+_data/**
