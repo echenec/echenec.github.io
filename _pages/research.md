@@ -41,10 +41,11 @@ nav_order: 2
 {% for author in pub.authors %}{% if author.last == "Chen" and author.first == "Eva" %}<span class="pub-author-me">{{ author.first }} {{ author.last }}</span>{% else %}{{ author.first }} {{ author.last }}{% endif %}{% unless forloop.last %}{% if forloop.rindex == 2 %} and {% else %}, {% endif %}{% endunless %}{% endfor %}
 {% if pub.doi or pub.pdf or pub.preregistration or pub.data %}
 <div class="pub-links">
-{% if pub.doi %}<a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener">DOI</a>{% endif %}
-{% if pub.pdf %} &middot; <a href="/assets/pdf/{{ pub.pdf }}" target="_blank">PDF</a>{% endif %}
-{% if pub.preregistration %} &middot; <a href="{{ pub.preregistration }}" target="_blank" rel="noopener">Preregistration</a>{% endif %}
-{% if pub.data %} &middot; <a href="{{ pub.data }}" target="_blank" rel="noopener">Data/Code</a>{% endif %}
+{% if pub.doi %}<a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener">paper</a>{% endif %}
+{% if pub.pdf %} &middot; <a href="/assets/pdf/{{ pub.pdf }}" target="_blank">paper</a>{% endif %}
+{% if pub.preregistration %} &middot; <a href="{{ pub.preregistration }}" target="_blank" rel="noopener">preregistration</a>{% endif %}
+{% if pub.data %} &middot; <a href="{{ pub.data }}" target="_blank" rel="noopener">data</a>{% endif %}
+{% if pub.equal_authorship %} &middot; Authors contributed equally{% endif %}
 </div>
 {% endif %}
 </div>
@@ -67,6 +68,15 @@ nav_order: 2
 {% if pub.journal %}<br><span class="pub-journal">{{ pub.journal }}</span>.{% endif %}
 <br>
 {% for author in pub.authors %}{% if author.last == "Chen" and author.first == "Eva" %}<span class="pub-author-me">{{ author.first }} {{ author.last }}</span>{% else %}{{ author.first }} {{ author.last }}{% endif %}{% unless forloop.last %}{% if forloop.rindex == 2 %} and {% else %}, {% endif %}{% endunless %}{% endfor %}
+{% if pub.doi or pub.pdf or pub.preregistration or pub.data %}
+<div class="pub-links">
+{% if pub.doi %}<a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener">paper</a>{% endif %}
+{% if pub.pdf %} &middot; <a href="/assets/pdf/{{ pub.pdf }}" target="_blank">paper</a>{% endif %}
+{% if pub.preregistration %} &middot; <a href="{{ pub.preregistration }}" target="_blank" rel="noopener">preregistration</a>{% endif %}
+{% if pub.data %} &middot; <a href="{{ pub.data }}" target="_blank" rel="noopener">data</a>{% endif %}
+{% if pub.equal_authorship %} &middot; Authors contributed equally{% endif %}
+</div>
+{% endif %}
 </div>
 {% endfor %}
 {% endif %}
@@ -87,7 +97,15 @@ nav_order: 2
 {% if pub.journal %}<br><span class="pub-journal">{{ pub.journal }}</span>.{% endif %}
 <br>
 {% for author in pub.authors %}{% if author.last == "Chen" and author.first == "Eva" %}<span class="pub-author-me">{{ author.first }} {{ author.last }}</span>{% else %}{{ author.first }} {{ author.last }}{% endif %}{% unless forloop.last %}{% if forloop.rindex == 2 %} and {% else %}, {% endif %}{% endunless %}{% endfor %}
-{% if pub.doi %}<div class="pub-links"><a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener">DOI</a></div>{% endif %}
+{% if pub.doi or pub.pdf or pub.preregistration or pub.data %}
+<div class="pub-links">
+{% if pub.doi %}<a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener">paper</a>{% endif %}
+{% if pub.pdf %} &middot; <a href="/assets/pdf/{{ pub.pdf }}" target="_blank">paper</a>{% endif %}
+{% if pub.preregistration %} &middot; <a href="{{ pub.preregistration }}" target="_blank" rel="noopener">preregistration</a>{% endif %}
+{% if pub.data %} &middot; <a href="{{ pub.data }}" target="_blank" rel="noopener">data</a>{% endif %}
+{% if pub.equal_authorship %} &middot; Authors contributed equally{% endif %}
+</div>
+{% endif %}
 </div>
 {% endfor %}
 {% endif %}
