@@ -36,7 +36,7 @@ nav_order: 2
 <div class="pub-entry">
 <div class="pub-year">{{ pub.year }}</div>
 {{ pub.title }}
-{% if pub.journal %}<br><span class="pub-journal">{{ pub.journal }}</span>.{% endif %}
+{% if pub.journal %}<br><span class="pub-journal">{{ pub.journal }}</span>{% endif %}
 <br>
 {% for author in pub.authors %}{% if author.last == "Chen" and author.first == "Eva" %}<span class="pub-author-me">{{ author.first }} {{ author.last }}</span>{% else %}{{ author.first }} {{ author.last }}{% endif %}{% unless forloop.last %}{% if forloop.rindex == 2 %} and {% else %}, {% endif %}{% endunless %}{% endfor %}
 {% if pub.doi or pub.pdf or pub.preregistration or pub.data %}
@@ -65,7 +65,7 @@ nav_order: 2
 <div class="pub-entry">
 <div class="pub-year">{{ pub.year }}</div>
 {{ pub.title }}
-{% if pub.journal %}<br><span class="pub-journal">{{ pub.journal }}</span>.{% endif %}
+{% if pub.journal %}<br><span class="pub-journal">{{ pub.journal }}</span>{% endif %}
 <br>
 {% for author in pub.authors %}{% if author.last == "Chen" and author.first == "Eva" %}<span class="pub-author-me">{{ author.first }} {{ author.last }}</span>{% else %}{{ author.first }} {{ author.last }}{% endif %}{% unless forloop.last %}{% if forloop.rindex == 2 %} and {% else %}, {% endif %}{% endunless %}{% endfor %}
 {% if pub.doi or pub.pdf or pub.preregistration or pub.data %}
@@ -94,7 +94,7 @@ nav_order: 2
 <div class="pub-entry">
 <div class="pub-year">{{ pub.year }}</div>
 {{ pub.title }}
-{% if pub.journal %}<br><span class="pub-journal">{{ pub.journal }}</span>.{% endif %}
+{% if pub.journal %}<br><span class="pub-journal">{{ pub.journal }}</span>{% endif %}
 <br>
 {% for author in pub.authors %}{% if author.last == "Chen" and author.first == "Eva" %}<span class="pub-author-me">{{ author.first }} {{ author.last }}</span>{% else %}{{ author.first }} {{ author.last }}{% endif %}{% unless forloop.last %}{% if forloop.rindex == 2 %} and {% else %}, {% endif %}{% endunless %}{% endfor %}
 {% if pub.doi or pub.pdf or pub.preregistration or pub.data %}
