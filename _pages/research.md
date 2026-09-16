@@ -103,7 +103,7 @@ nav_order: 2
 {% if pub.pdf %} &middot; <a href="/assets/pdf/{{ pub.pdf }}" target="_blank">paper</a>{% endif %}
 {% if pub.preregistration %} &middot; <a href="{{ pub.preregistration }}" target="_blank" rel="noopener">preregistration</a>{% endif %}
 {% if pub.data %} &middot; <a href="{{ pub.data }}" target="_blank" rel="noopener">data</a>{% endif %}
-{% if pub.equal_authorship %} &middot; Authors contributed equally{% endif %}
+{% if pub.equal_authorship %} &middot; Equal authorship {% endif %}
 </div>
 {% endif %}
 </div>
