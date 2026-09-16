@@ -10,9 +10,9 @@ nav_order: 2
 <style>
 .research-category { font-size: 1.4em; font-weight: 700; border-bottom: 1px solid currentColor; padding-bottom: 0.3em; margin-top: 2em; margin-bottom: 0.5em; cursor: pointer; }
 .research-description { font-weight: 400; margin-bottom: 1em; }
-.pub-subcategory { text-transform: uppercase; font-weight: 700; letter-spacing: 0.03em; font-size: 0.85em; margin-top: 1.2em; margin-bottom: 0.3em; }
+.pub-subcategory { text-transform: uppercase; font-weight: 800; letter-spacing: 0.03em; font-size: 0.95em; margin-top: 1.2em; margin-bottom: 0.3em; }
 .pub-entry { font-weight: 400; margin-bottom: 2.2em; }
-.pub-year { font-weight: 400; font-size: 1em; margin-bottom: 0.2em; }
+.pub-year { font-weight: 700; font-size: 1em; margin-bottom: 0.2em; }
 .pub-journal { font-style: italic; }
 .pub-author-me { font-weight: 700; font-style: normal; }
 .pub-links { font-size: 0.8em; }
