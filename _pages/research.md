@@ -67,11 +67,11 @@ Under construction...
 
 <div class="research-subcategory">Under Review</div>
 
-{% bibliography --query @*[keywords="migration"][note="Under review"] %}
+{% bibliography --query @*[keywords~=migration][note=under-review] %}
 
 <div class="research-subcategory">Work in Progress</div>
 
-{% bibliography --query @*[keywords="migration"][note="Work in progress"] %}
+{% bibliography --query @*[keywords~=migration][note=in-progress] %}
 
 
 <div class="research-category">Race &amp; Ethnicity</div>
@@ -83,7 +83,7 @@ Under construction...
 
 <div class="research-subcategory">Work in Progress</div>
 
-{% bibliography --query @*[keywords="race-ethnicity"][note="Work in progress"] %}
+{% bibliography --query @*[keywords~=race-ethnicity][note=in-progress] %}
 
 
 <div class="research-category">Asian America</div>
@@ -95,4 +95,4 @@ Under construction...
 
 <div class="research-subcategory">Reviews</div>
 
-{% bibliography --query @*[keywords="asian-america"][note="Reviews"] %}
+{% bibliography --query @*[keywords~=asian-america][note=review] %}
