@@ -39,7 +39,7 @@ nav_order: 2
 {% if pub.journal %}<br><span class="pub-journal">{{ pub.journal }}</span>{% endif %}
 <br>
 {% for author in pub.authors %}{% if author.last == "Chen" and author.first == "Eva" %}<span class="pub-author-me">{{ author.first }} {{ author.last }}</span>{% else %}{{ author.first }} {{ author.last }}{% endif %}{% unless forloop.last %}{% if forloop.rindex == 2 %} and {% else %}, {% endif %}{% endunless %}{% endfor %}
-{% if pub.doi or pub.pdf or pub.preregistration or pub.data %}
+{% if pub.doi or pub.pdf or pub.preregistration or pub.data or pub.equal_authorship %}
 <div class="pub-links">
 {% if pub.doi %}<a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener">paper</a>{% endif %}
 {% if pub.pdf %} &middot; <a href="/assets/pdf/{{ pub.pdf }}" target="_blank">paper</a>{% endif %}
@@ -68,7 +68,7 @@ nav_order: 2
 {% if pub.journal %}<br><span class="pub-journal">{{ pub.journal }}</span>{% endif %}
 <br>
 {% for author in pub.authors %}{% if author.last == "Chen" and author.first == "Eva" %}<span class="pub-author-me">{{ author.first }} {{ author.last }}</span>{% else %}{{ author.first }} {{ author.last }}{% endif %}{% unless forloop.last %}{% if forloop.rindex == 2 %} and {% else %}, {% endif %}{% endunless %}{% endfor %}
-{% if pub.doi or pub.pdf or pub.preregistration or pub.data %}
+{% if pub.doi or pub.pdf or pub.preregistration or pub.data or pub.equal_authorship %}
 <div class="pub-links">
 {% if pub.doi %}<a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener">paper</a>{% endif %}
 {% if pub.pdf %} &middot; <a href="/assets/pdf/{{ pub.pdf }}" target="_blank">paper</a>{% endif %}
@@ -97,7 +97,7 @@ nav_order: 2
 {% if pub.journal %}<br><span class="pub-journal">{{ pub.journal }}</span>{% endif %}
 <br>
 {% for author in pub.authors %}{% if author.last == "Chen" and author.first == "Eva" %}<span class="pub-author-me">{{ author.first }} {{ author.last }}</span>{% else %}{{ author.first }} {{ author.last }}{% endif %}{% unless forloop.last %}{% if forloop.rindex == 2 %} and {% else %}, {% endif %}{% endunless %}{% endfor %}
-{% if pub.doi or pub.pdf or pub.preregistration or pub.data %}
+{% if pub.doi or pub.pdf or pub.preregistration or pub.data or pub.equal_authorship %}
 <div class="pub-links">
 {% if pub.doi %}<a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener">paper</a>{% endif %}
 {% if pub.pdf %} &middot; <a href="/assets/pdf/{{ pub.pdf }}" target="_blank">paper</a>{% endif %}
