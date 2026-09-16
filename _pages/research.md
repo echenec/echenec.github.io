@@ -35,7 +35,7 @@ nav_order: 2
 {% for pub in matches %}
 <div class="pub-entry">
 <div class="pub-year">{{ pub.year }}</div>
-&ldquo;{{ pub.title }}.&rdquo;
+{{ pub.title }}
 {% if pub.journal %}<span class="pub-journal">{{ pub.journal }}</span>.{% endif %}
 <br>
 {% for author in pub.authors %}{% if author.last == "Chen" and author.first == "Eva" %}<span class="pub-author-me">{{ author.first }} {{ author.last }}</span>{% else %}{{ author.first }} {{ author.last }}{% endif %}{% unless forloop.last %}{% if forloop.rindex == 2 %} and {% else %}, {% endif %}{% endunless %}{% endfor %}
@@ -63,7 +63,7 @@ nav_order: 2
 {% for pub in matches %}
 <div class="pub-entry">
 <div class="pub-year">{{ pub.year }}</div>
-&ldquo;{{ pub.title }}.&rdquo;
+{{ pub.title }}
 {% if pub.journal %}<span class="pub-journal">{{ pub.journal }}</span>.{% endif %}
 <br>
 {% for author in pub.authors %}{% if author.last == "Chen" and author.first == "Eva" %}<span class="pub-author-me">{{ author.first }} {{ author.last }}</span>{% else %}{{ author.first }} {{ author.last }}{% endif %}{% unless forloop.last %}{% if forloop.rindex == 2 %} and {% else %}, {% endif %}{% endunless %}{% endfor %}
@@ -83,7 +83,7 @@ nav_order: 2
 {% for pub in matches %}
 <div class="pub-entry">
 <div class="pub-year">{{ pub.year }}</div>
-&ldquo;{{ pub.title }}.&rdquo;
+{{ pub.title }}
 {% if pub.journal %}<span class="pub-journal">{{ pub.journal }}</span>.{% endif %}
 <br>
 {% for author in pub.authors %}{% if author.last == "Chen" and author.first == "Eva" %}<span class="pub-author-me">{{ author.first }} {{ author.last }}</span>{% else %}{{ author.first }} {{ author.last }}{% endif %}{% unless forloop.last %}{% if forloop.rindex == 2 %} and {% else %}, {% endif %}{% endunless %}{% endfor %}
