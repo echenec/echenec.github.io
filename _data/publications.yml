@@ -1,6 +1,5 @@
 - category: migration
   status: "Under Review"
-  year: 2026
   title: "Assimilation without Settlement: Temporary Adaptation Strategies among Chinese International Students"
   note: "International Migration"
   authors:
@@ -8,21 +7,18 @@
 
 - category: migration
   status: "Work in Progress"
-  year: 2026
   title: "From \"Distant\" to \"Settled\": Native Perceptions of Immigrant Temporariness"
   authors:
     - {first: Eva, last: Chen}
 
 - category: migration
   status: "Work in Progress"
-  year: 2026
   title: "Temporary Status, Permanent Disadvantage? Legal Status and Labor Market Outcomes among Highly Educated Immigrants"
   authors:
     - {first: Eva, last: Chen}
 
 - category: race-ethnicity
   status: "Work in Progress"
-  year: 2026
   title: "Minority Rule: Perceptions of Disadvantage in Higher Education"
   note: "Authors contributed equally"
   authors:
@@ -30,7 +26,7 @@
     - {first: Eva, last: Chen}
 
 - category: asian-america
-  status: "Peer-Reviewed Publication"
+  status: "Reviews"
   year: 2025
   title: "Review Essay: Race by Law for Asian Americans"
   journal: "American Journal of Sociology"
