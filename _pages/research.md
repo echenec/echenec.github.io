@@ -10,11 +10,11 @@ nav_order: 2
 <style>
 .research-category { font-size: 1.4em; font-weight: 700; border-bottom: 1px solid currentColor; padding-bottom: 0.3em; margin-top: 2em; margin-bottom: 0.5em; cursor: pointer; }
 .research-description { font-weight: 400; margin-bottom: 1em; }
-.pub-subcategory { text-transform: uppercase; font-weight: 300; letter-spacing: 0.03em; font-size: 0.85em; margin-top: 1.2em; margin-bottom: 0.3em; }
-.pub-entry { font-weight: 400; margin-bottom: 1.2em; }
-.pub-year { font-weight: 700; }
+.pub-subcategory { text-transform: uppercase; font-weight: 700; letter-spacing: 0.03em; font-size: 0.85em; margin-top: 1.2em; margin-bottom: 0.3em; }
+.pub-entry { font-weight: 400; margin-bottom: 2.2em; }
+.pub-year { font-weight: 700; font-size: 1em; }
 .pub-journal { font-style: italic; }
-.pub-author-me { font-weight: 700; }
+.pub-author-me { font-weight: 700; font-style: normal; }
 .pub-links { font-size: 0.8em; }
 .pub-links a { color: var(--global-theme-color, #2262c6); text-decoration: underline; }
 </style>
@@ -36,7 +36,6 @@ nav_order: 2
       <div class="pub-entry">
         <span class="pub-year">{{ pub.year }}.</span> &ldquo;{{ pub.title }}.&rdquo;
         {% if pub.journal %}<span class="pub-journal">{{ pub.journal }}</span>.{% endif %}
-        {% if pub.note and pub.journal == nil %}<em>{{ pub.note }}</em>.{% endif %}
         <br>
         {% for author in pub.authors %}{% if author.last == "Chen" and author.first == "Eva" %}<span class="pub-author-me">{{ author.first }} {{ author.last }}</span>{% else %}{{ author.first }} {{ author.last }}{% endif %}{% unless forloop.last %}{% if forloop.rindex == 2 %} and {% else %}, {% endif %}{% endunless %}{% endfor %}
         {% if pub.doi or pub.pdf or pub.preregistration or pub.data %}
@@ -64,7 +63,6 @@ nav_order: 2
       <div class="pub-entry">
         <span class="pub-year">{{ pub.year }}.</span> &ldquo;{{ pub.title }}.&rdquo;
         {% if pub.journal %}<span class="pub-journal">{{ pub.journal }}</span>.{% endif %}
-        {% if pub.note and pub.journal == nil %}<em>{{ pub.note }}</em>.{% endif %}
         <br>
         {% for author in pub.authors %}{% if author.last == "Chen" and author.first == "Eva" %}<span class="pub-author-me">{{ author.first }} {{ author.last }}</span>{% else %}{{ author.first }} {{ author.last }}{% endif %}{% unless forloop.last %}{% if forloop.rindex == 2 %} and {% else %}, {% endif %}{% endunless %}{% endfor %}
       </div>
