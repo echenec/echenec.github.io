@@ -28,7 +28,7 @@ Prior to graduate studies, I received a BA in political science from the Univers
   navigator.clipboard.writeText('031755100184').then(() => {
     const el = document.getElementById('pogo-copy');
     const original = el.textContent;
-    el.textContent = 'Copied!';
+    el.textContent = 'friend code copied!';
     setTimeout(() => { el.textContent = original; }, 1500);
   });
 ">Pokémon Go</span>.
