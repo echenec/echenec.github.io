@@ -19,6 +19,8 @@ calendar: false
 .course-materials { font-size: 0.8em; }
 .course-materials a { color: var(--global-theme-color, #2262c6); text-decoration: underline; }
 .course-entry { margin-bottom: 1.8em; }
+.course-eval { font-weight: 400; font-size: 0.85em; margin-bottom: 0.4em; }
+
 </style>
 
 <p class="teaching-statement">
@@ -45,6 +47,8 @@ Under construction...
 
 
 <div class="teaching-category">Anonymous Teaching Evaluations</div>
+
+<div class="course-eval">
 <p>
   <i>Eva is great! In her discussion sections, there was a good balance between her speaking, asking questions, and our responding and facilitating the discussion</i> (The Social World, Spring 2026)
 </p>
@@ -68,5 +72,5 @@ Under construction...
 <p>
   <i>Eva was a great discussion leader! She really helped clarify concepts from lecture and it felt easy to participate in discussion because of the environment she created </i>(The Social World, Fall 2023)
 </p>
-
+</div>
 
