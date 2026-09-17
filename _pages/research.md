@@ -26,8 +26,11 @@ nav_order: 2
 {% assign asian_items = site.data.publications | where: "category", "asian-america" %}
 
 
+
 <div class="research-category">Temporary Migration</div>
-<p class="research-description">Under construction.</p>
+<p class="research-description">
+  My dissertation research how migrants holding temporary legal status navigate uncertain futures in their long-term decision-making, as well as in daily life. How do migrants navigate tensions between their individual migration goals and external pressures that discourage permanent settlement? When time in the host country does not guarantee legal stability, what other factors may foster a sense of settledness for new arrivals in the United States?
+</p>
 {% for status in status_order %}
 {% assign matches = migration_items | where: "status", status %}
 {% if matches.size > 0 %}
@@ -45,7 +48,7 @@ nav_order: 2
 {% if pub.pdf %} &middot; <a href="/assets/pdf/{{ pub.pdf }}" target="_blank">paper</a>{% endif %}
 {% if pub.preregistration %} &middot; <a href="{{ pub.preregistration }}" target="_blank" rel="noopener">preregistration</a>{% endif %}
 {% if pub.data %} &middot; <a href="{{ pub.data }}" target="_blank" rel="noopener">data</a>{% endif %}
-{% if pub.equal_authorship %} &middot; Authors contributed equally{% endif %}
+{% if pub.equal_authorship %} &middot; Equal authorship{% endif %}
 </div>
 {% endif %}
 </div>
@@ -56,7 +59,9 @@ nav_order: 2
 
 
 <div class="research-category">Racial Categorization</div>
-<p class="research-description">Under construction.</p>
+<p class="research-description">
+  This line of research considers how the meaning of racial and ethnic categories shifts across individuals and contexts. How do group boundaries shift when material outcomes are at stake? Across multiple dimensions of stratification and inequality, what characteristics determine who counts as an insider versus an outsider?
+</p>
 {% for status in status_order %}
 {% assign matches = race_items | where: "status", status %}
 {% if matches.size > 0 %}
@@ -74,7 +79,7 @@ nav_order: 2
 {% if pub.pdf %} &middot; <a href="/assets/pdf/{{ pub.pdf }}" target="_blank">paper</a>{% endif %}
 {% if pub.preregistration %} &middot; <a href="{{ pub.preregistration }}" target="_blank" rel="noopener">preregistration</a>{% endif %}
 {% if pub.data %} &middot; <a href="{{ pub.data }}" target="_blank" rel="noopener">data</a>{% endif %}
-{% if pub.equal_authorship %} &middot; Authors contributed equally{% endif %}
+{% if pub.equal_authorship %} &middot; Equal authorship{% endif %}
 </div>
 {% endif %}
 </div>
@@ -85,7 +90,9 @@ nav_order: 2
 
 
 <div class="research-category">Asian America</div>
-<p class="research-description">Under construction.</p>
+<p class="research-description">
+  My research interest also extends into Asian American studies. I consider how unique migration histories, legacies of racism, and relationships to imperialism shape contemporary Asian American political participation and group solidarity. 
+</p>
 {% for status in status_order %}
 {% assign matches = asian_items | where: "status", status %}
 {% if matches.size > 0 %}
