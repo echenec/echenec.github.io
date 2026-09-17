@@ -11,7 +11,6 @@ calendar: false
 
 <style>
 .teaching-category { font-size: 1.4em; font-weight: 700; border-bottom: 1px solid currentColor; padding-bottom: 0.3em; margin-top: 2em; margin-bottom: 0.5em; }
-.teaching-statement { margin-bottom: 1em; }
 .course-name { text-transform: uppercase; font-weight: 800; letter-spacing: 0.03em; font-size: 0.95em; margin-top: 1.2em; margin-bottom: 0.1em; }
 .course-sems { font-weight: 400; font-size: 0.85em; margin-bottom: 0.4em; }
 .course-inst { font-weight: 400; font-size: 0.85em; margin-bottom: 0.4em; }
@@ -23,9 +22,6 @@ calendar: false
 
 </style>
 
-<p class="teaching-statement">
-Under construction...
-</p>
 
 {% assign ta_courses = site.data.teaching | where: "role", "ta" %}
 {% assign other_courses = site.data.teaching | where: "role", "other" %}
