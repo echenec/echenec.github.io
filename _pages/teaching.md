@@ -13,7 +13,7 @@ calendar: false
 .research-category { font-size: 1.4em; font-weight: 700; border-bottom: 1px solid currentColor; padding-bottom: 0.3em; margin-top: 2em; margin-bottom: 0.5em; }
 .teaching-statement { margin-bottom: 2em; }
 .course-name { text-transform: uppercase; font-weight: 800; letter-spacing: 0.03em; font-size: 0.95em; margin-top: 1.2em; margin-bottom: 0.1em; }
-.course-sems { font-weight: 700; font-size: 0.95em; margin-bottom: 0.4em; }
+.course-sems { font-weight: 400; font-size: 0.85em; margin-bottom: 0.4em; }
 .course-description { margin-bottom: 0.4em; }
 .course-materials { font-size: 0.8em; }
 .course-materials a { color: var(--global-theme-color, #2262c6); text-decoration: underline; }
@@ -41,19 +41,6 @@ Under construction...
 </div>
 {% endfor %}
 
-<div class="research-category">Other Instruction</div>
-{% for c in other_courses %}
-<div class="course-entry">
-<div class="course-name">{{ c.course }}</div>
-<div class="course-sems">{{ c.sems }}</div>
-<div class="course-description">{{ c.description }}</div>
-{% if c.materials %}
-<div class="course-materials">
-{% for m in c.materials %}{% unless forloop.first %} &middot; {% endunless %}<a href="{{ m.url }}" target="_blank">{{ m.label }}</a>{% endfor %}
-</div>
-{% endif %}
-</div>
-{% endfor %}
 
 <div class="research-category">Anonymous Teaching Evaluations</div>
 <p>
