@@ -37,3 +37,12 @@ Prior to graduate studies, I received a BA in political science from the Univers
       <i class="fas fa-university"></i>
     </a>
   </div>
+
+<span id="pogo-copy" style="cursor: pointer; text-decoration: underline dotted; color: var(--global-theme-color, #2262c6);" onclick="
+  navigator.clipboard.writeText('031755100184').then(() => {
+    const el = document.getElementById('pogo-copy');
+    const original = el.textContent;
+    el.textContent = 'Copied!';
+    setTimeout(() => { el.textContent = original; }, 1500);
+  });
+">Pokémon Go</span>
