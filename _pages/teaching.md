@@ -10,10 +10,11 @@ calendar: false
 
 
 <style>
-.research-category { font-size: 1.4em; font-weight: 700; border-bottom: 1px solid currentColor; padding-bottom: 0.3em; margin-top: 2em; margin-bottom: 0.5em; }
+.teaching-category { font-size: 1.4em; font-weight: 700; border-bottom: 1px solid currentColor; padding-bottom: 0.3em; margin-top: 2em; margin-bottom: 0.5em; }
 .teaching-statement { margin-bottom: 2em; }
 .course-name { text-transform: uppercase; font-weight: 800; letter-spacing: 0.03em; font-size: 0.95em; margin-top: 1.2em; margin-bottom: 0.1em; }
 .course-sems { font-weight: 400; font-size: 0.85em; margin-bottom: 0.4em; }
+.course-inst { font-weight: 400; font-size: 0.85em; margin-bottom: 0.4em; }
 .course-description { margin-bottom: 0.4em; }
 .course-materials { font-size: 0.8em; }
 .course-materials a { color: var(--global-theme-color, #2262c6); text-decoration: underline; }
@@ -27,11 +28,12 @@ Under construction...
 {% assign ta_courses = site.data.teaching | where: "role", "ta" %}
 {% assign other_courses = site.data.teaching | where: "role", "other" %}
 
-<div class="research-category">Teaching Assistant</div>
+<div class="teaching-category">Teaching Assistant</div>
 {% for c in ta_courses %}
 <div class="course-entry">
 <div class="course-name">{{ c.course }}</div>
 <div class="course-sems">{{ c.sems }}</div>
+<div class="course-inst">{{ c.inst }}</div>
 <div class="course-description">{{ c.description }}</div>
 {% if c.materials %}
 <div class="course-materials">
@@ -42,7 +44,7 @@ Under construction...
 {% endfor %}
 
 
-<div class="research-category">Anonymous Teaching Evaluations</div>
+<div class="teaching-category">Anonymous Teaching Evaluations</div>
 <p>
   <i>Eva is great! In her discussion sections, there was a good balance between her speaking, asking questions, and our responding and facilitating the discussion</i> (The Social World, Spring 2026)
 </p>
