@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://echenec.github.io/sitemap.xml
+Sitemap: https://evachen.org/sitemap.xml
