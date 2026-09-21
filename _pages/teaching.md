@@ -18,7 +18,7 @@ calendar: false
 .course-materials { font-size: 0.8em; }
 .course-materials a { color: var(--global-theme-color, #2262c6); text-decoration: underline; }
 .course-entry { margin-bottom: 1.8em; }
-.course-eval { font-weight: 400; font-size: 0.85em; margin-bottom: 0.4em; }
+.course-eval { font-size: 0.85em; margin-bottom: 0.4em; }
 
 </style>
 
