@@ -7,4 +7,7 @@ nav_order: 5
 ---
 
 
-<a href="https://docs.google.com/document/d/1gmE36n1Mjn1pQmg8gzlHEV84nLX1Ttf98BM9hlAO5-Y/view">My CV is available here.</a>
+<a href="evachen.org/assets/pdf/EC CV 9.26.pdf">My CV is available here.</a>
+<br>
+<object data="evachen.org/assets/documents/sample.pdf" type="application/pdf" width="100%" height="600px">
+</object>
