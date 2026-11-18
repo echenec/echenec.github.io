@@ -44,13 +44,16 @@ nav_order: 2
 {% if pub.note and pub.journal == nil %}<br><span class="pub-journal">{{ pub.status }} at {{ pub.note }}</span>{% endif %}
 <br>
 <span class="pub-authors">{% for author in pub.authors %}{% if author.last == "Chen" and author.first == "Eva" %}<span class="pub-author-me">{{ author.first }} {{ author.last }}</span>{% else %}{{ author.first }} {{ author.last }}{% endif %}{% unless forloop.last %}{% if forloop.rindex == 2 %} and {% else %}, {% endif %}{% endunless %}{% endfor %}</span>
-{% if pub.doi or pub.pdf or pub.preregistration or pub.data or pub.equal_authorship %}
+{% if pub.doi or pub.pdf or pub.preregistration or pub.data or pub.equal_authorship or pub.working_paper or pub.pilot or pub.data_analysis%}
 <div class="pub-links">
 {% if pub.doi %}<a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener">paper</a>{% endif %}
 {% if pub.pdf %} &middot; <a href="/assets/pdf/{{ pub.pdf }}" target="_blank">paper</a>{% endif %}
 {% if pub.preregistration %} &middot; <a href="{{ pub.preregistration }}" target="_blank" rel="noopener">preregistration</a>{% endif %}
 {% if pub.data %} &middot; <a href="{{ pub.data }}" target="_blank" rel="noopener">data</a>{% endif %}
 {% if pub.equal_authorship %} &middot; Equal authorship{% endif %}
+{% if pub.working_paper %} &middot; Working paper{% endif %}
+{% if pub.pilot %} &middot; Pilot{% endif %}
+{% if pub.data_analysis %} &middot; Data analysis{% endif %}
 </div>
 {% endif %}
 </div>
@@ -76,13 +79,16 @@ nav_order: 2
 {% if pub.note and pub.journal == nil %}<br><span class="pub-journal">{{ pub.status }} at {{ pub.note }}</span>{% endif %}
 <br>
 <span class="pub-authors">{% for author in pub.authors %}{% if author.last == "Chen" and author.first == "Eva" %}<span class="pub-author-me">{{ author.first }} {{ author.last }}</span>{% else %}{{ author.first }} {{ author.last }}{% endif %}{% unless forloop.last %}{% if forloop.rindex == 2 %} and {% else %}, {% endif %}{% endunless %}{% endfor %}</span>
-{% if pub.doi or pub.pdf or pub.preregistration or pub.data or pub.equal_authorship %}
+{% if pub.doi or pub.pdf or pub.preregistration or pub.data or pub.equal_authorship or pub.working_paper or pub.pilot or pub.data_analysis%}
 <div class="pub-links">
 {% if pub.doi %}<a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener">paper</a>{% endif %}
 {% if pub.pdf %} &middot; <a href="/assets/pdf/{{ pub.pdf }}" target="_blank">paper</a>{% endif %}
 {% if pub.preregistration %} &middot; <a href="{{ pub.preregistration }}" target="_blank" rel="noopener">preregistration</a>{% endif %}
 {% if pub.data %} &middot; <a href="{{ pub.data }}" target="_blank" rel="noopener">data</a>{% endif %}
 {% if pub.equal_authorship %} &middot; Equal authorship{% endif %}
+{% if pub.working_paper %} &middot; Working paper{% endif %}
+{% if pub.pilot %} &middot; Pilot{% endif %}
+{% if pub.data_analysis %} &middot; Data analysis{% endif %}
 </div>
 {% endif %}
 </div>
@@ -108,13 +114,16 @@ nav_order: 2
 {% if pub.note and pub.journal == nil %}<br><span class="pub-journal">{{ pub.status }} at {{ pub.note }}</span>{% endif %}
 <br>
 <span class="pub-authors">{% for author in pub.authors %}{% if author.last == "Chen" and author.first == "Eva" %}<span class="pub-author-me">{{ author.first }} {{ author.last }}</span>{% else %}{{ author.first }} {{ author.last }}{% endif %}{% unless forloop.last %}{% if forloop.rindex == 2 %} and {% else %}, {% endif %}{% endunless %}{% endfor %}</span>
-{% if pub.doi or pub.pdf or pub.preregistration or pub.data or pub.equal_authorship %}
+{% if pub.doi or pub.pdf or pub.preregistration or pub.data or pub.equal_authorship or pub.working_paper or pub.pilot or pub.data_analysis%}
 <div class="pub-links">
 {% if pub.doi %}<a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener">paper</a>{% endif %}
 {% if pub.pdf %} &middot; <a href="/assets/pdf/{{ pub.pdf }}" target="_blank">paper</a>{% endif %}
 {% if pub.preregistration %} &middot; <a href="{{ pub.preregistration }}" target="_blank" rel="noopener">preregistration</a>{% endif %}
 {% if pub.data %} &middot; <a href="{{ pub.data }}" target="_blank" rel="noopener">data</a>{% endif %}
 {% if pub.equal_authorship %} &middot; Equal authorship {% endif %}
+{% if pub.working_paper %} &middot; Working paper{% endif %}
+{% if pub.pilot %} &middot; Pilot{% endif %}
+{% if pub.data_analysis %} &middot; Data analysis{% endif %}
 </div>
 {% endif %}
 </div>
