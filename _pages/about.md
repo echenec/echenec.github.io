@@ -22,9 +22,9 @@ latest_posts:
 
 Hello! I am a PhD Candidate and Paul F. Lazarsfeld Fellow in the Department of Sociology at Columbia University. My research interests lie at the intersection of international migration, ethnic and racial boundaries, and political participation.
 
-Presently, I am studying how migrants and new arrivals in the United States adapt in their host country, with a particular focus on the tension between _temporariness_ and _permanence_ in migrant status. My current projects investigate how migrants holding temporary legal status navigate daily life amidst future uncertainty, how the native-born population draws boundaries around legal status and citizenship, and how temporary legal status informs labor market outcomes. I draw on qualitative, quantitative, and experimental methods to explore these questions.
+Presently, I am studying how migrants and new arrivals in the United States adapt in their host country, with a particular focus on the tension between _temporariness_ and _permanence_ in migrant status. My current projects investigate how migrants holding temporary legal status navigate daily life amidst future uncertainty, how the native-born population draws boundaries of belonging for immigrants, and how temporary legal status informs labor market outcomes. I draw on qualitative, quantitative, and experimental methods to explore these questions.
 
-Prior to graduate studies, I received a BA in political science from the University of Minnesota. Outside of research, I enjoy live music, badminton, and <span id="pogo-copy" style="cursor: pointer; text-decoration: underline dotted; color: var(--global-theme-color, #2262c6);" onclick="
+Prior to graduate studies, I received a BA in political science from the University of Minnesota. Outside of research, I enjoy live music, badminton, and <span id="pogo-copy" style="cursor: pointer; text-decoration: underline dotted;" onclick="
   navigator.clipboard.writeText('031755100184').then(() => {
     const el = document.getElementById('pogo-copy');
     const original = el.textContent;
