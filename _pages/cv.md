@@ -7,4 +7,4 @@ nav_order: 5
 ---
 
 
-<a href="/assets/pdf/EC CV 9.26.pdf">My CV is available here.</a>
+<a href="/assets/pdf/EC CV.pdf">My CV is available here.</a>
