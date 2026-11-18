@@ -1,19 +1,21 @@
 - category: migration
-  status: "Under Review"
-  title: "Assimilation without Settlement: Temporary Adaptation Strategies among Chinese International Students"
-  note: "Migration Studies"
+  status: "Work in Progress"
+  title: "Precarious Privilege: Strategic Adaptations of Chinese Students in the United States"
+  working_paper: true
   authors:
     - {first: Eva, last: Chen}
 
 - category: migration
   status: "Work in Progress"
-  title: "From \"Distant\" to \"Settled\": Native Perceptions of Immigrant Temporariness"
+  title: "Native-Born Perspectives on the Boundaries of American Identity"
+  pilot: true
   authors:
     - {first: Eva, last: Chen}
 
 - category: migration
   status: "Work in Progress"
-  title: "Temporary Status, Permanent Disadvantage? Legal Status and Labor Market Outcomes among Highly Educated Immigrants"
+  title: "Temporary Status, Permanent Disadvantage: Legal Status and Labor Market Outcomes among Highly Educated Immigrants"
+  data_analysis: true
   authors:
     - {first: Eva, last: Chen}
 
@@ -21,6 +23,7 @@
   status: "Work in Progress"
   title: "Minority Rule: Perceptions of Disadvantage in Higher Education"
   equal_authorship: true
+  pilot: true
   authors:
     - {first: Katerine S., last: Pérez}
     - {first: Eva, last: Chen}
